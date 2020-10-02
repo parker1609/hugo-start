@@ -22,14 +22,9 @@ jobs:
     #1. 가상머신으로 checkout
     - uses: actions/checkout@v2
     
-    #2. theme를 submodule로 등록했는데 그것도 checkout
-    - name: Checkout submodules
-      shell: bash
-      run: |
-        auth_header="$(git config --local --get http.https://github.com/.extraheader)"
-        git submodule sync --recursive
-        git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
-        # run 다음 내용들은 submodule을 최신으로 udapte한것을 가져오는 내용 + a이다.
+    #2. (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
+    - name: Update theme
+      run: git submodule update --init --recursive
         
     #3. npm install 사용하는 theme가 sass/scss를 사용하는 경우 node.js를 설치하고 npm install 과정이 필요하다.
     - name: npm install
