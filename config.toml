@@ -1,4 +1,40 @@
 baseURL = "https://codemcd.github.io/hugo-start/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme = "ananke"
+theme = "docsy"
+
+# Language settings: 한글을 default 값으로 했다.
+contentDir = "content/ko"
+defaultContentLanguage = "ko"
+defaultContentLanguageInSubdir = false
+
+# Useful when translating.
+enableMissingTranslationPlaceholders = true
+
+# Language configuration
+[languages.ko]
+title = "한국어 버전 타이틀을 적어주자"
+languageName ="Korean"
+contentDir = "content/ko"
+time_format_default = "2006.01.02"
+time_format_blog = "2006.01.02"
+
+# Weight used for sorting.
+weight = 1
+
+[languages]
+[languages.en]
+title = "영어버전 타이틀을 적어주자"
+description = "설명을 적어주자"
+languageName ="English"
+contentDir = "content/en"
+time_format_default = "02.01.2006"
+time_format_blog = "02.01.2006"
+
+# Enable Lunr.js offline search
+offlineSearch = true
+
+# Repository configuration (URLs for in-page links to opening issues and suggesting changes)
+github_repo = "https://codemcd.github.io/hugo-start/"
+# An optional link to a related project repo. For example, the sibling repository where your product code lives.
+github_project_repo = "https://codemcd.github.io/hugo-start/"

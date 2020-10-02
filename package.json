@@ -1,0 +1,24 @@
+{
+  "name": "quickstart",
+  "version": "1.0.0",
+  "description": "## 1. Hugo Quick Start - 참고: <https://gohugo.io/getting-started/quick-start/>",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss-cli": "^8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CODEMCD/hugo-start.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CODEMCD/hugo-start/issues"
+  },
+  "homepage": "https://github.com/CODEMCD/hugo-start#readme"
+}

@@ -1,6 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+type: docs
+weight: 4
+draft: false
+description: >
+    
 ---
 
