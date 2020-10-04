@@ -27,6 +27,8 @@
 - 잘못 설치한 git submodule 삭제하기
     - <https://jjeong.tistory.com/1345>
     - `fatal: Please stage your changes to .gitmodules or stash them to proceed` 와 같은 에러가 나오면 에러 메시지 대로 `git add .`해서 변경사항을 적용한다.
+- `hugo server`로 로컬 서버 실행했을 때, `ERROR 2020/10/05 06:24:52 Error: listen tcp 127.0.0.1:1313: socket: too many open files in system` 오류
+- github의 Github Actions로 기존 배포 설정으로 배포했을 때, postcss를 찾지 못하는 오류
 
 
 ## Hugo Project
