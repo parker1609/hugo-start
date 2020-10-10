@@ -1,4 +1,6 @@
 # Hugo Start
+> 보류...문서화하는 데 있어 너무 많은 번거로움이 있다고 판단함.
+
 ## Hugo를 사용하는 이유
 먼저, Github page를 활용한 정적 페이지로 문서화하는 이유부터 말해야 할 것 같다. 첫 째는 모든 개발관련 공부 및 글을 Github에서 관리하려고 한다. 여기서 주제가 다른 글들을 여러 repository로 관리하다보니 불필요한 시간낭비와 정리하기가 매우 어려웠다. 이를 차라리 한 곳에서 관리하고 싶었다. 둘 째는 개발을 하면서 또는 관련 공부를 하면서 수 많은 정리글을 적게 되는데, 이를 카테고리화할 수 있는 블로그 플랫폼을 찾을 수 없었다. 물론 태깅, 시리즈 등등 여러 기능을 제공하는 플랫폼은 있지만 보기가 불편하다. 위키처럼 구조화된 메뉴를 기반하고 내부에서 검색이 가능한 플랫폼을 찾고 있는데, 이에 적합한 것이 github를 활용한 정적페이지였다. 그 중에서도 빌드가 가장 빠르다는 Hugo를 선택했다.
 
@@ -35,6 +37,8 @@ Hugo의 단점은 진입장벽이다. 한글 문서가 많이 없다. 그리고 
     - <https://superuser.com/questions/827984/open-files-limit-does-not-work-as-before-in-osx-yosemite>
         - 위 게시글의 첫 번째 답변 그대로 따라하면 해결된다.
 - github의 Github Actions로 기존 배포 설정으로 배포했을 때, postcss를 찾지 못하는 오류
+    - <https://stackoverflow.com/questions/46053414/npm-warn-requires-a-peer-of-but-none-is-installed-you-must-install-peer>
+        - 두 번째 답변대로 로컬에서 수행하여 package.json에 필요한 패키지를 추가했음, 그리고 리모트 레포지토리에 Push
 
 
 ## Hugo Project

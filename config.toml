@@ -13,7 +13,7 @@ enableMissingTranslationPlaceholders = true
 
 # Language configuration
 [languages.ko]
-title = "한국어 버전 타이틀을 적어주자"
+title = "테스트 블로그"
 languageName ="Korean"
 contentDir = "content/ko"
 time_format_default = "2006.01.02"
@@ -32,9 +32,15 @@ time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
 
 # Enable Lunr.js offline search
-offlineSearch = true
+# offlineSearch = true
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://codemcd.github.io/hugo-start/"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 github_project_repo = "https://codemcd.github.io/hugo-start/"
+
+#html 태그 사용가능하게 하는 옵션
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
